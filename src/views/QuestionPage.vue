@@ -52,7 +52,7 @@ const shuffle = (array) => {
   <!-- {{ question.question }} -->
   
   <div v-html="question.question" class="text-center text-2x1 font-bold"></div>
-  <div>
+  <div class="gird w-full flex-grow grid-cols-2 gap-8">
       <div v-for="answer in answers"
       v-html="answer.answer" 
       :key="answer.id" 
